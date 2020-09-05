@@ -1,0 +1,16 @@
+{
+  "name": "advanced-bootstrap-blocks-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@wordpress/scripts": "^12.2.0"
+  },
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+  },
+  "author": "Advanced Bootstrap Blocks",
+  "license": "GPL-3.0"
+}
