@@ -27,7 +27,9 @@
     "packages-update": "wp-scripts packages-update",
     "start": "wp-scripts start",
     "test:e2e": "wp-scripts test-e2e",
-    "test:unit": "wp-scripts test-unit-js"
+    "test:unit": "wp-scripts test-unit-js",
+    "test:unit:update": "wp-scripts test-unit-js --updateSnapshot",
+    "test:unit:watch": "wp-scripts test-unit-js --watch"
   },
   "author": "Advanced Bootstrap Blocks",
   "license": "GPL-3.0"

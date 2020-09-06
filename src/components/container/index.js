@@ -10,17 +10,10 @@ import {
 	defaultBlockSettings
 } from '../../utils'
 
+import Container from './Container'
+
 const BOOTSTRAP_BLOCK_TYPE = 'advanced-bootstrap-blocks/container'
 const defaultClassName = getBlockDefaultClassName(BOOTSTRAP_BLOCK_TYPE)
-
-const Container = ( props ) => {
-	const { className, children } = props
-	return (
-		<div className={ ['container', className].join(" ").trim() }>
-			{children}
-		</div>
-	)
-}
 
 /*
  * Register Bootstrap 4 - Container block
@@ -52,4 +45,4 @@ wp.hooks.addFilter(
 	'blocks.getBlockDefaultClassName',
 	`${BOOTSTRAP_BLOCK_TYPE}/set-block-custom-class-name`,
 	setBlockCustomClassName
-);
+)

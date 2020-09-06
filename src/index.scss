@@ -1,5 +1,5 @@
 /*!
- * Advaned Bootstrap Blocks
+ * Advanced Bootstrap Blocks
  * Based on Bootstrap v4.5.2 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
  * Copyright 2011-2020 Twitter, Inc.
@@ -16,9 +16,9 @@
 @import "~bootstrap/scss/code";
 @import "~bootstrap/scss/grid";
 
-@import './components/container/_container.scss'; // override
-@import './components/row/_row.scss'; // override
-@import './components/column/_column.scss'; // override
+@import './components/container/_container.scss'; // ABB override
+@import './components/row/_row.scss'; // ABB override
+@import './components/column/_column.scss'; // ABB override
 
 @import "~bootstrap/scss/tables";
 @import "~bootstrap/scss/forms";

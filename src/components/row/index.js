@@ -47,7 +47,6 @@ registerBlockType(BOOTSTRAP_BLOCK_TYPE, {
 const setBlockCustomClassName = ( blockName ) => {
 	return blockName === defaultClassName ? [] : blockName;
 }
-
 wp.hooks.addFilter(
 	'blocks.getBlockDefaultClassName',
 	`${BOOTSTRAP_BLOCK_TYPE}/set-block-custom-class-name`,
