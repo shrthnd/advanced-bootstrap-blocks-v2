@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///index.scss"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,WAAW;EACX,kBAAkB,EAAE","file":"index.css","sourcesContent":[".container {\n  background: purple;\n  color: #fff;\n  text-align: center; }\n"],"sourceRoot":""}

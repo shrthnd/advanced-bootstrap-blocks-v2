@@ -10,34 +10,34 @@ import {
 	defaultBlockSettings
 } from '../../utils'
 
-const BOOTSTRAP_BLOCK_TYPE = 'advanced-bootstrap-blocks/container'
+const BOOTSTRAP_BLOCK_TYPE = 'advanced-bootstrap-blocks/column'
 const defaultClassName = getBlockDefaultClassName(BOOTSTRAP_BLOCK_TYPE)
 
-const Container = ( props ) => {
+const Column = ( props ) => {
 	const { className, children } = props
 	return (
-		<div className={ ['container', className].join(" ").trim() }>
+		<div className={ ['col', className].join(" ").trim() }>
 			{children}
 		</div>
 	)
 }
 
 /*
- * Register Bootstrap 4 - Container block
+ * Register Bootstrap 4 - Row block
  */ 
 registerBlockType(BOOTSTRAP_BLOCK_TYPE, {
 	...defaultBlockSettings({ 
-		title: 'BS4 - Container' 
+		title: 'BS4 - Column' 
 	}), 
 	edit: ( { className } ) => (
-		<Container className={className}>
+		<Column className={className}>
 			<InnerBlocks />
-		</Container>
+		</Column>
 	),
 	save: ( { className } ) => (
-		<Container className={className}>
+		<Column className={className}>
 			<InnerBlocks.Content />
-		</Container>
+		</Column>
 	),
 })
 

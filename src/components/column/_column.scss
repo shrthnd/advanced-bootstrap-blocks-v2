@@ -1,0 +1,22 @@
+[data-type="advanced-bootstrap-blocks/column"] {
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 100%;
+  
+  .col { 
+    outline: 1px dashed green;
+    
+    > .block-editor-inner-blocks {
+      width: 100%;
+    }
+
+    > .block-editor-inner-blocks > .block-editor-block-list__layout {
+      width: 100%;
+      min-height: 30px;
+    }
+
+    > .block-editor-inner-blocks > .block-editor-block-list__layout > .wp-block {
+      // child blocks... 
+    } 
+  }
+}
