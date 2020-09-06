@@ -2,14 +2,10 @@ import { registerBlockType, getBlockDefaultClassName } from '@wordpress/blocks'
 import { InnerBlocks } from '@wordpress/block-editor'
 
 import { defaultBlockSettings } from '../../utils'
+import Row from './Row'
 
 const BOOTSTRAP_BLOCK_TYPE = 'advanced-bootstrap-blocks/row'
 const defaultClassName = getBlockDefaultClassName(BOOTSTRAP_BLOCK_TYPE)
-
-const Row = (props) => {
-  const { className, children } = props
-  return <div className={['row', className].join(' ').trim()}>{children}</div>
-}
 
 /*
  * Register Bootstrap 4 - Row block
