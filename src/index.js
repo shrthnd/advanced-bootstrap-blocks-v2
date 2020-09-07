@@ -1,10 +1,10 @@
-/*
+/**
  * Import BS4 and ABB stylesheets
  */
 import './index.scss'
 
-/*
- * Register ABB blocks
+/**
+ * Register ABB block components
  */
 import './components/container'
 import './components/row'

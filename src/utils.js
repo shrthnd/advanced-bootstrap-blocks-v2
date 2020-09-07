@@ -1,3 +1,9 @@
+/**
+ * Construct block settings
+ *
+ * @param {Object} settings - Default block settings
+ * @param {string} settings.title - Block title
+ */
 export const defaultBlockSettings = (settings) => {
   const { title } = settings
   return {
@@ -27,4 +33,13 @@ export const defaultBlockSettings = (settings) => {
     },
     category: 'layout',
   }
+}
+
+/**
+ * Convert className array to string
+ *
+ * @param {Array} classNameArray - Array containing component classNames
+ */
+export const classNames = (classNameArray) => {
+  return classNameArray.join(' ').trim()
 }
