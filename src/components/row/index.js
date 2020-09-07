@@ -1,3 +1,4 @@
+import { Fragment } from 'react'
 import { registerBlockType, getBlockDefaultClassName } from '@wordpress/blocks'
 import { InnerBlocks } from '@wordpress/block-editor'
 
