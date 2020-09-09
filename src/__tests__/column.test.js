@@ -4,9 +4,9 @@ import { Column } from '../components/column/Column'
 
 describe('Column', () => {
   it('should accept custom className', function () {
-    const comparison = shallow(<Column className="col-md-4" />).contains(
-      <div className="col col-md-4"></div>
-    )
+    const html = shallow(<Column className="col-md-4" />)
+    const example = <div className="col col-md-4"></div>
+    const comparison = html.contains(example)
     expect(comparison).toBe(true)
   })
 

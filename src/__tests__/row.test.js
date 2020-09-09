@@ -4,9 +4,9 @@ import { Row } from '../components/row/Row'
 
 describe('Row', () => {
   it('should accept custom className', function () {
-    const comparison = shallow(<Row className="align-items-center" />).contains(
-      <div className="row align-items-center"></div>
-    )
+    const html = shallow(<Row className="align-items-center" />)
+    const example = <div className="row align-items-center"></div>
+    const comparison = html.contains(example)
     expect(comparison).toBe(true)
   })
 

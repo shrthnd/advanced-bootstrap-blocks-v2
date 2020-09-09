@@ -4,9 +4,9 @@ import { Container } from '../components/container/Container'
 
 describe('Container', () => {
   it('should accept custom className', function () {
-    const comparison = shallow(<Container className="bg-info" />).contains(
-      <div className="container bg-info"></div>
-    )
+    const html = shallow(<Container className="bg-info" />)
+    const example = <div className="container bg-info"></div>
+    const comparison = html.contains(model)
     expect(comparison).toBe(true)
   })
 
