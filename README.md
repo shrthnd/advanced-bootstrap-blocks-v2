@@ -15,12 +15,14 @@ Advanced Bootstrap Blocks relies on `wp-scripts` under the hood and requires
 
 ### Getting Started
 
-**Clone this repository**
+#### Clone this repository
+
   ```sh
   git clone https://github.com/shrthnd/advanced-bootstrap-blocks-v2
   ```
 
-**Install dependencies**
+#### Install dependencies
+
   ```sh
   cd advanced-bootstrap-blocks-v2
   npm install
@@ -41,20 +43,24 @@ file with `[name].test.js`)
 
 ### Local Testing with WordPress
 
-**Configure environment variables**
+#### Configure environment variables 
+
   ```sh
   cp .env.sample .env # copy example
   vim .env # edit with vim or your preferred text editor
   ```
 
-**Run WordPress (apache, php, mysql/mariadb) with Docker**
+#### Run WordPress (apache, php, mysql/mariadb) with Docker 
+
   ```sh 
   docker-compose up -d # start
   docker-compose logs wordpress # view apache logs
   docker-compose logs database # view database logs
   docker-compose stop # stop
   ```
-**Reset Wordpress**
+  
+#### Reset Wordpress
+
   ```sh
   docker-compose down # destroy containers
   rm -rf ./docker # remove wordpress core and database

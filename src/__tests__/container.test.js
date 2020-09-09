@@ -6,7 +6,7 @@ describe('Container', () => {
   it('should accept custom className', function () {
     const html = shallow(<Container className="bg-info" />)
     const example = <div className="container bg-info"></div>
-    const comparison = html.contains(model)
+    const comparison = html.contains(example)
     expect(comparison).toBe(true)
   })
 

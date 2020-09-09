@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "devDependencies": {
+    "@wordpress/blocks": "^6.21.0",
     "@wordpress/eslint-plugin": "^7.1.0",
     "@wordpress/scripts": "^12.2.0",
     "bootstrap": "^4.5.2",
@@ -30,6 +31,9 @@
     "test:unit": "wp-scripts test-unit-js",
     "test:unit:update": "wp-scripts test-unit-js --updateSnapshot",
     "test:unit:watch": "wp-scripts test-unit-js --watch"
+  },
+  "moduleNameMapper": {
+    "^@wordpress/(.*)": "./node_modules/$1"
   },
   "author": "Advanced Bootstrap Blocks",
   "license": "GPL-3.0"

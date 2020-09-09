@@ -1,3 +1,5 @@
+import React from 'react'
+
 /**
  * Construct block settings
  *
@@ -37,9 +39,20 @@ export const defaultBlockSettings = (settings) => {
 
 /**
  * Convert className array to string
+ * Same behavior as native JS DOMTokenList?
  *
  * @param {Array} classNameArray - Array containing component classNames
  */
 export const classNames = (classNameArray) => {
   return classNameArray.join(' ').trim()
+}
+
+/**
+ * Return empty array if blockname equals className
+ *
+ * @param {string} blockName
+ * @param {string} className
+ */
+export const removeDefaultBlockClassName = (blockName, className) => {
+  return blockName === className ? [] : blockName
 }

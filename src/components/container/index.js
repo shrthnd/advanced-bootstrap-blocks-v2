@@ -1,7 +1,7 @@
 import { registerBlockType, getBlockDefaultClassName } from '@wordpress/blocks'
 import { InnerBlocks } from '@wordpress/block-editor'
 
-import { defaultBlockSettings } from '../../utils'
+import { defaultBlockSettings, removeDefaultBlockClassName } from '../../utils'
 import Container from './Container'
 
 const BOOTSTRAP_BLOCK_TYPE = 'advanced-bootstrap-blocks/container'
@@ -36,12 +36,8 @@ registerBlockType(BOOTSTRAP_BLOCK_TYPE, {
  *
  * @param {string} blockName
  */
-const setBlockCustomClassName = (blockName) => {
-  return blockName === defaultClassName ? [] : blockName
-}
-
 wp.hooks.addFilter(
   'blocks.getBlockDefaultClassName',
   `${BOOTSTRAP_BLOCK_TYPE}/set-block-custom-class-name`,
-  setBlockCustomClassName
+  (blockName) => removeDefaultBlockClassName(blockName, defaultClassName)
 )
