@@ -28,15 +28,18 @@ Advanced Bootstrap Blocks relies on `wp-scripts` under the hood and requires
 
 ### Available Scripts
 
-* `npm run lint:js` will report errors based on a combination of .eslintrc 
+* `npm run start` to watch files and recompile on change
+* `npm run build` to build once
+* `npm run lint:js` to report errors based on a combination of .eslintrc 
 settings and .editorconfig settings
-* `npm run format:js` may do unexpected things to your code based on the 
-settings defined in .prettierrc.js
-* `npm run test:unit` will run all tests inside ./src/\_\_tests\_\_ (or any 
-file with name.test.js)
-* `npm run test:unit:update` will update unit-test snapshots
+* `npm run format:js` to format code based on the 
+settings in `.prettierrc.js`
+* `npm run test:unit` to run tests in `src/__tests__` (or any 
+file with `[name].test.js`)
+* `npm run test:unit:watch` to run interactive test environment
+* `npm run test:unit:update` to update unit-test snapshots
 
-### Local Testing and Development
+### Local Testing with WordPress
 
 **Configure environment variables**
   ```sh
