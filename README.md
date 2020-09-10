@@ -1,6 +1,6 @@
 # Advanced Bootstrap Blocks
 
-Lightweight, flexible block framework for building Bootstrap 4 layouts and 
+Lightweight, flexible block library for building Bootstrap 4 layouts and 
 page-templates in the WordPress editor. 
 
 This is an experimental version of advanced-bootstsrap-blocks for WordPress 
@@ -8,8 +8,7 @@ This is an experimental version of advanced-bootstsrap-blocks for WordPress
 
 ## Requirements
 
-Advanced Bootstrap Blocks relies on `wp-scripts` under the hood and requires
-`node` and `npm` to build from source. Docker is recommended for local development and testing.
+Advanced Bootstrap Blocks runs `@wordpress/scripts` under the hood (with Webpack + Babel + Jest + ESLint + Prettier) and requires `node` and `npm` to build from source. Docker is recommended for local development and testing. 
 
 ## Plugin Development
 
@@ -69,4 +68,7 @@ file with `[name].test.js`)
 
 ## Further Reading
 
+* The official [Block Editor Handbook](https://developer.wordpress.org/block-editor/)
 * @wordpress/scripts:  [README](https://github.com/WordPress/gutenberg/blob/master/packages/scripts/README.md), [source](https://github.com/WordPress/gutenberg/blob/master/packages/scripts/config/jest-unit.config.js)
+* [Testing React Apps With Jest](https://jestjs.io/docs/en/tutorial-react), [Configuring Jest](https://jestjs.io/docs/en/configuration)
+* Configuring [ESLint](https://eslint.org/docs/user-guide/configuring) and [Prettier](https://prettier.io/docs/en/configuration.html)
