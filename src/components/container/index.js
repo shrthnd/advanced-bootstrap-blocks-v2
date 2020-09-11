@@ -2,7 +2,8 @@ import { registerBlockType, getBlockDefaultClassName } from '@wordpress/blocks'
 import { InnerBlocks } from '@wordpress/block-editor'
 
 import { defaultBlockSettings, removeDefaultBlockClassName } from '../../utils'
-import Container from './Container'
+import edit from './edit'
+import save from './save'
 
 const BOOTSTRAP_BLOCK_TYPE = 'advanced-bootstrap-blocks/container'
 const defaultClassName = getBlockDefaultClassName(BOOTSTRAP_BLOCK_TYPE)
@@ -19,16 +20,8 @@ registerBlockType(BOOTSTRAP_BLOCK_TYPE, {
   ...defaultBlockSettings({
     title: 'BS4 - Container',
   }),
-  edit: ({ className }) => (
-    <Container className={className}>
-      <InnerBlocks />
-    </Container>
-  ),
-  save: ({ className }) => (
-    <Container className={className}>
-      <InnerBlocks.Content />
-    </Container>
-  ),
+  edit: edit,
+  save: save,
 })
 
 /**

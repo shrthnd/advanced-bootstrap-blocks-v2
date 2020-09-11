@@ -2,7 +2,8 @@ import { registerBlockType, getBlockDefaultClassName } from '@wordpress/blocks'
 import { InnerBlocks } from '@wordpress/block-editor'
 
 import { defaultBlockSettings, removeDefaultBlockClassName } from '../../utils'
-import Column from './Column'
+import edit from './edit'
+import save from './save'
 
 const BOOTSTRAP_BLOCK_TYPE = 'advanced-bootstrap-blocks/column'
 const defaultClassName = getBlockDefaultClassName(BOOTSTRAP_BLOCK_TYPE)
@@ -19,16 +20,8 @@ registerBlockType(BOOTSTRAP_BLOCK_TYPE, {
   ...defaultBlockSettings({
     title: 'BS4 - Column',
   }),
-  edit: ({ className }) => (
-    <Column className={className}>
-      <InnerBlocks />
-    </Column>
-  ),
-  save: ({ className }) => (
-    <Column className={className}>
-      <InnerBlocks.Content />
-    </Column>
-  ),
+  edit: edit,
+  save: save,
 })
 
 /**
