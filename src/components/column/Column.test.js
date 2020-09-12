@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import { Column } from '../components/column/Column'
+import Column from './Column'
 
 describe('Column', () => {
   it('should accept custom className', function () {

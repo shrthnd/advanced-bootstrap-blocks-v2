@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import { Row } from '../components/row/Row'
+import Row from './Row'
 
 describe('Row', () => {
   it('should accept custom className', function () {
